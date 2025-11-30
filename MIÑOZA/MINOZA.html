@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ambher Mark Miñoza Portfolio</title>
+  <meta name="description" content="Portfolio of Ambher Mark Miñoza, a college student from Cebu passionate about technology and web development.">
+  <meta name="theme-color" content="#f5f7fb">
+  <meta property="og:title" content="Ambher Mark Miñoza - Portfolio">
+  <meta property="og:description" content="College student from Cebu passionate about technology and web development.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #f5f7fb; /* softer neutral */
+      --bg2: #eef2f7; /* gradient end */
+      --text: #111827; /* slate-900 */
+      --heading: #000000;
+      --accent: #4f46e5; /* indigo */
+      --accent-hover: #4338ca;
+      --muted: #64748b; /* slate-500 */
+      --card: #ffffffcc;
+      --shadow: 0 10px 25px rgba(0,0,0,0.12);
+      --radius: 16px;
+    }
+
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      margin: 0;
+      background: linear-gradient(135deg, var(--bg), var(--bg2));
+      font-family: 'Poppins', sans-serif;
+      color: var(--text);
+      display: grid;
+      place-items: center;
+    }
+
+    .container {
+      width: min(720px, 92%);
+      background: var(--card);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 28px 24px 32px;
+      backdrop-filter: blur(6px);
+    }
+
+    .skip-link {
+      position: absolute;
+      left: -9999px;
+    }
+    .skip-link:focus {
+      left: 12px;
+      top: 12px;
+      background: #000;
+      color: #fff;
+      padding: 8px 12px;
+      border-radius: 8px;
+      z-index: 10;
+      text-decoration: none;
+    }
+
+    .top-nav {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      margin-bottom: 12px;
+    }
+    .top-nav a {
+      color: var(--text);
+      text-decoration: none;
+      background: #ffffff;
+      padding: 8px 12px;
+      border-radius: 999px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    .top-nav a:focus-visible { outline: 3px solid #1e90ff; outline-offset: 3px; }
+
+    header {
+      text-align: center;
+    }
+
+    h1 {
+      color: var(--heading);
+      font-weight: 600;
+      margin: 0;
+    }
+
+    #nameart {
+      color: var(--text);
+      margin-top: 16px;
+      font-weight: 600;
+      font-size: 1.75rem;
+    }
+
+    .details {
+      color: var(--muted);
+      margin: 6px 0;
+      font-weight: 400;
+      font-size: 1.1rem;
+    }
+
+    
+
+    .avatar {
+      border-radius: 50%;
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      margin-top: 20px;
+      box-shadow: 0 8px 18px rgba(0,0,0,0.18);
+    }
+
+    .actions {
+      margin-top: 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .hero-btn {
+      background-color: var(--accent);
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      font-size: 16px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.2s ease, transform 0.05s ease;
+      font-family: 'Poppins', sans-serif;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .hero-btn:hover,
+    .hero-btn:focus-visible {
+      background-color: var(--accent-hover);
+    }
+
+    .hero-btn:active {
+      transform: translateY(1px);
+    }
+
+    /* Better focus visibility */
+    :where(a, button):focus-visible {
+      outline: 3px solid #1e90ff;
+      outline-offset: 3px;
+    }
+
+    /* Reduce motion if user prefers */
+    @media (prefers-reduced-motion: reduce) {
+      * {
+        transition: none !important;
+        animation: none !important;
+      }
+    }
+    .social {
+      margin-top: 18px;
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+    .social a {
+      color: var(--text);
+      text-decoration: none;
+      background: #ffffff;
+      padding: 8px 12px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+    }
+    .social a:hover { background: #f5f8fb; }
+
+    footer {
+      margin-top: 24px;
+      font-size: 0.9rem;
+      color: #2f3b46;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <main id="main" class="container" role="main">
+    <header>
+      <h1>Portfolio</h1>
+      <img class="avatar" src="pic.jpg" alt="Portrait of Ambher Mark Miñoza" loading="lazy">
+    </header>
+
+    <section aria-labelledby="nameart">
+      <h1 id="nameart">Ambher Mark Miñoza</h1>
+      <h3 class="details">ambhermarkminoza@gmail.com</h3>
+      <h2 class="details">I am a College Student</h2>
+      <h2 class="details">From Cebu, Philippines</h2>
+    </section>
+
+    <div class="actions">
+      <a class="hero-btn" href="baozi.html" aria-label="Go to Get to know me page">Get to know me</a>
+      <a class="hero-btn" href="mimi.html" aria-label="Go to My Projects page">My Projects</a>
+    </div>
+
+    <div class="social" aria-label="Social links">
+      <a href="https://www.facebook.com/ambhermark.minoza" target="_blank" rel="noopener noreferrer">Facebook</a>
+      <a href="https://www.instagram.com/martini.blue._/" target="_blank" rel="noopener noreferrer">Instagram</a>
+    </div>
+  </main>
+  
+</body>
+</html>

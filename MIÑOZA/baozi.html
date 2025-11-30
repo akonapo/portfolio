@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - Ambher Mark Miñoza</title>
+  <meta name="description" content="About Ambher Mark Miñoza: background, interests, and achievements.">
+  <meta name="theme-color" content="#b0e0e6">
+  <meta property="og:title" content="About - Ambher Mark Miñoza">
+  <meta property="og:description" content="Background, interests, and achievements.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #f5f7fb; /* softer neutral */
+      --bg2: #eef2f7;
+      --text: #111827;
+      --heading: #111827;
+      --accent: #4f46e5;
+      --accent-hover: #4338ca;
+      --card: #ffffffcc;
+      --shadow: 0 10px 25px rgba(0,0,0,0.12);
+      --radius: 16px;
+    }
+
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, var(--bg), var(--bg2));
+      color: var(--text);
+      display: grid;
+      place-items: center;
+      text-align: center;
+    }
+
+    .container {
+      width: min(820px, 92%);
+      background: var(--card);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 28px 24px 32px;
+      backdrop-filter: blur(6px);
+    }
+    .top-nav {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      margin-bottom: 12px;
+    }
+    .top-nav a {
+      color: var(--text);
+      text-decoration: none;
+      background: #ffffff;
+      padding: 8px 12px;
+      border-radius: 999px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    .top-nav a:focus-visible { outline: 3px solid #1e90ff; outline-offset: 3px; }
+
+    header h1 {
+      margin: 0 0 8px 0;
+      color: var(--heading);
+      font-weight: 600;
+      font-size: 2rem;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 22px;
+      margin: 20px 0;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+      text-align: left;
+    }
+
+    .card h2 {
+      color: var(--text);
+      font-weight: 600;
+      margin: 0 0 12px 0;
+    }
+
+    .card p {
+      color: #2f3b46;
+      line-height: 1.7;
+      margin: 0;
+    }
+
+    .card ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .card ul li {
+      margin: 10px 0;
+      font-size: 16px;
+      color: #2f3b46;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .emoji {
+      font-size: 18px;
+      line-height: 1;
+    }
+
+    .actions {
+      margin-top: 24px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .back-link {
+      display: inline-block;
+      text-decoration: none;
+      background-color: var(--accent);
+      color: white;
+      padding: 12px 20px;
+      border-radius: 10px;
+      font-weight: 500;
+      transition: background 0.2s ease, transform 0.05s ease;
+    }
+
+    .back-link:hover,
+    .back-link:focus-visible {
+      background-color: var(--accent-hover);
+    }
+
+    .back-link:active {
+      transform: translateY(1px);
+    }
+
+    :where(a, button):focus-visible {
+      outline: 3px solid #1e90ff;
+      outline-offset: 3px;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      * { transition: none !important; animation: none !important; }
+    }
+
+    .skip-link {
+      position: absolute;
+      left: -9999px;
+    }
+    .skip-link:focus {
+      left: 12px;
+      top: 12px;
+      background: #000;
+      color: #fff;
+      padding: 8px 12px;
+      border-radius: 8px;
+      z-index: 10;
+      text-decoration: none;
+    }
+
+    .social {
+      margin-top: 18px;
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+    .social a {
+      color: var(--text);
+      text-decoration: none;
+      background: #ffffff;
+      padding: 8px 12px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+    }
+    .social a:hover { background: #f5f8fb; }
+
+    footer {
+      margin-top: 24px;
+      font-size: 0.9rem;
+      color: #2f3b46;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <main id="main" class="container" role="main">
+    <header>
+      <h1>About Me</h1>
+    </header>
+
+    <section class="card" aria-labelledby="about-heading">
+      <h2 id="about-heading">About Myself</h2>
+      <p>
+        Hello! I'm <b>Ambher Mark Miñoza</b>, a college student from Cebu, Philippines.
+        I am passionate about technology and web development. I enjoy learning new
+        skills, building creative projects, and collaborating with others to solve
+        real-world problems.
+      </p>
+    </section>
+
+    <section class="card" aria-labelledby="achievements-heading">
+      <h2 id="achievements-heading">Achievements</h2>
+      <ul aria-label="List of achievements">
+        <li><span class="emoji" aria-hidden="true">🏅</span><span>Dean's Lister, CTU (2023–2024)</span></li>
+        <li><span class="emoji" aria-hidden="true">🎓</span><span>SHS at University of Cebu Main Campus</span></li>
+      </ul>
+    </section>
+
+    <section class="card" aria-labelledby="education-heading">
+      <h2 id="education-heading">Education</h2>
+      <p><b>CEBU TECHNOLOGICAL UNIVERSITY - UNIVERSITY</b></p>
+      <p>Bachelor of Science in Information Technology</p>
+    </section>
+
+    <section class="card" aria-labelledby="toolbox-heading">
+      <h2 id="toolbox-heading">My Tool Box</h2>
+      <ul aria-label="Technologies I use">
+        <li><span class="emoji" aria-hidden="true">💻</span><span>C</span></li>
+        <li><span class="emoji" aria-hidden="true">🌐</span><span>HTML</span></li>
+        <li><span class="emoji" aria-hidden="true">🎨</span><span>CSS</span></li>
+        <li><span class="emoji" aria-hidden="true">☕</span><span>Java</span></li>
+        <li><span class="emoji" aria-hidden="true">🐍</span><span>Python</span></li>
+      </ul>
+    </section>
+
+    <div class="actions">
+      <a href="MINOZA.html" class="back-link" aria-label="Back to Home">← Back to Home</a>
+    </div>
+
+    <div class="social" aria-label="Social links">
+      <a href="https://www.facebook.com/ambhermark.minoza" target="_blank" rel="noopener noreferrer">Facebook</a>
+      <a href="https://www.instagram.com/martini.blue._/" target="_blank" rel="noopener noreferrer">Instagram</a>
+    </div>
+
+  </main>
+  
+</body>
+</html>
